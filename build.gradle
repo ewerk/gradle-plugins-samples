@@ -35,16 +35,23 @@ dependencies {
   testCompile "org.testng:testng:$testNgVersion"
   testCompile "org.assertj:assertj-core:$assertjVersion"
 
-  providedRuntime 'javax.validation:validation-api:1.1.0.Final'
+  providedRuntime "javax.validation:validation-api:$validationVersion"
 }
 
 annotationProcessor {
-  library 'com.querydsl:querydsl-apt:4.0.9'
+  library "com.querydsl:querydsl-apt:$querydslVersion"
   processor 'com.querydsl.apt.morphia.MorphiaAnnotationProcessor'
   sourcesDir 'src/morphia/java'
 }
 
+autoValue {
+  library = "com.google.auto.value:auto-value:$autoValueVersion"
+  autoValueSourcesDir = 'src/autoValue/java'
+}
+
 querydsl {
+  library = "com.querydsl:querydsl-apt:$querydslVersion"
+  querydslSourcesDir = 'src/querydsl/java'
   jpa = true
   jdo = false
   hibernate = false
@@ -55,7 +62,9 @@ querydsl {
 }
 
 dagger {
-  library = 'com.google.dagger:dagger:2.0'
+  library = "com.google.dagger:dagger:$dagger2Version"
+  processorLibrary = "com.google.dagger:dagger-compiler:$dagger2Version"
+  daggerSourcesDir = 'src/dagger/java'
 }
 
 artifactoryDebPublish {

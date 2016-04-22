@@ -4,7 +4,7 @@ package com.ewerk.gradle.plugins.sample;
 import javax.annotation.Generated;
 
 @Generated("com.google.auto.value.processor.AutoValueProcessor")
-final class AutoValue_Bean extends Bean {
+ final class AutoValue_Bean extends Bean {
 
   private final String hello;
   private final int count;
@@ -54,9 +54,9 @@ final class AutoValue_Bean extends Bean {
   public int hashCode() {
     int h = 1;
     h *= 1000003;
-    h ^= hello.hashCode();
+    h ^= this.hello.hashCode();
     h *= 1000003;
-    h ^= count;
+    h ^= this.count;
     return h;
   }
 
