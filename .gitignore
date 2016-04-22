@@ -7,5 +7,4 @@
 **/src/querydsl/**
 **/src/generated/java/**
 hs_err_*.log
-classes
 *.hprof
