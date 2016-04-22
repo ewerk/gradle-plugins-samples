@@ -5,7 +5,7 @@ plugins {
   id 'org.gradle.war'
   id 'com.ewerk.gradle.plugins.annotation-processor' version '1.0.2'
   id 'com.ewerk.gradle.plugins.artifactory-deb-publish' version '1.0.1'
-  id 'com.ewerk.gradle.plugins.auto-value' version '1.0.5'
+  id 'com.ewerk.gradle.plugins.auto-value' version '1.0.6'
   id 'com.ewerk.gradle.plugins.integration-test' version '1.0.8'
   id 'com.ewerk.gradle.plugins.querydsl' version '1.0.6'
   id 'com.ewerk.gradle.plugins.dagger' version '1.0.3'
