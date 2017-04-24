@@ -9,7 +9,7 @@ plugins {
   id 'com.ewerk.gradle.plugins.integration-test' version '1.0.9'
   id 'com.ewerk.gradle.plugins.querydsl' version '1.0.9'
   id 'com.ewerk.gradle.plugins.dagger' version '1.0.4'
-  id 'com.ewerk.gradle.plugins.jaxb2' version '1.0.3'
+  id 'com.ewerk.gradle.plugins.jaxb2' version '1.0.4'
 }
 
 sweeney {
@@ -83,6 +83,8 @@ jaxb2 {
     'model-classes' {
       basePackage = 'com.ewerk.gradle.plugins.sample'
       schema = 'src/main/xsd/model.xsd'
+      bindingsDir = 'src/main/xsd'
+      includedBindingFiles = 'model.xjb'
     }
   }
 }
